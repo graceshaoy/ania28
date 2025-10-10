@@ -31,14 +31,14 @@ const gameData= {
     "3": {
         "text":"what kind of tea?",
         "choices":{
-            "honey ginseng": [13, ["tomato","eyebrow seal"]],
-            "pi pa gao": [13, ["angry cat", "angry puppy"]],
-            "vitamin c": [13,["yowling puppy", "owl cat"]],
-            "jasmine": [13,["green hamster", "fire kitty"]],
-            "actually fuck that. i want beer": [13,["cheek beer cat", "belly cat", "wise monke"]]
+            "honey ginseng": [18, ["tomato","eyebrow seal"]],
+            "pi pa gao": [18, ["angry cat", "angry puppy"]],
+            "vitamin c": [18,["yowling puppy", "owl cat"]],
+            "jasmine": [18,["green hamster", "fire kitty"]],
+            "actually fuck that. i want beer": [18,["cheek beer cat", "belly cat", "wise monke"]]
         },
     },
-    "13": {
+    "18": {
         "text":"you're sipping your drink, enjoying the flavor. what a perfect choice for this day!",
         "choices":{
             "continue":[14,[]]
@@ -56,13 +56,13 @@ const gameData= {
     "4": {
         "text":"which friend will you call?",
         "choices":{
-            "the one i haven't caught up w in awhile": [13, ["wise monke", "shark cat"]],
-            "the one i call every day, duh!": [13, ["angry cat", "yowling puppy"]],
-            "the wise one, i need advice about something...": [13,["angry puppy", "black cat"]],
-            "someone to just be on the phone w. i just like the company of someone else": [13,["black cat", "tomato", "snow monke"]]
+            "the one i haven't caught up w in awhile": [17, ["wise monke", "shark cat"]],
+            "the one i call every day, duh!": [17, ["angry cat", "yowling puppy"]],
+            "the wise one, i need advice about something...": [17,["angry puppy", "black cat"]],
+            "someone to just be on the phone w. i just like the company of someone else": [17,["black cat", "tomato", "snow monke"]]
         },
     },
-    "13": {
+    "17": {
         "text":"you're having a nice time with your friend. it's so important to have strong friendships!",
         "choices":{
             "continue":[8,[]]
@@ -269,7 +269,7 @@ function revealMostSelectedVegetable() {
 
         // Share button functionality
         shareButton.onclick = () => {
-            const shareMessage = `grace made this super cool quiz! check out what creature you are at https://html-preview.github.io/?url=https://raw.githubusercontent.com/graceshaoy/ania28/sophie/home_page/index.html#`;
+            const shareMessage = `it's ania's 28th bday! check out what creature ania sends grace at https://html-preview.github.io/?url=https://raw.githubusercontent.com/graceshaoy/ania28/sophie/home_page/index.html#`;
             navigator.clipboard.writeText(shareMessage).then(() => {
                 alert('Link copied to clipboard!');
             }).catch(err => {
