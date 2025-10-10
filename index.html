@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What Vegetable Are You?</title>
-    <link rel="icon" href="smaller_images/tomato.png" type="image/png">
+    <title>What Creature Are You?</title>
     <style>
         @font-face {
             font-family: 'PixelFont';
-            src: url('Pixelify_Sans/pixel_font.ttf') format('truetype');
+            src: url('ProFontWindows.ttf') format('truetype');
         }
 
         body, html {
@@ -18,7 +17,7 @@
             align-items: center;
             justify-content: center;
             font-family: 'PixelFont', sans-serif;
-            background: #faf5e2;
+            background: #290000;
         }
 
         .container {
@@ -28,7 +27,7 @@
             max-width: calc(100vh * (9 / 16));
             padding: 20px;
             border-radius: 10px;
-            background: #a6e6b5;
+            background: #290000;
             /* background: #e5f2d2; */
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
@@ -40,22 +39,30 @@
         }
 
         .title {
-            font-size: 21px;
+            font-size: 48px;
+            color: #f74d19;
+        }
+        .subtitle {
+            font-size: 24px;
+            color: #f74d19;
+            /* border: 0.5px solid #f74d19; */
             margin-bottom: 3vh;
         }
 
         .start-button {
-            font-size: 21px;
+            font-size: 36px;
             padding: 1vh 2vw;
             /* border: 2px solid #fcf0c0; */
-            background-color: #f8eab6;
+            background-color: #290000;
+            color: #f74d19;
             cursor: pointer;
             text-decoration: none;
             margin-bottom: 3vh;
         }
 
         .start-button:hover {
-            background-color: #ddd;
+            background-color: #f74d19;
+            color: #290000;
         }
 
         .game-container {
@@ -77,23 +84,33 @@
             font-family: 'PixelFont', sans-serif;
             font-size: 18px; /* Adjust font size to be smaller */
             padding: 1vh 1vw; /* Adjust padding based on viewport height and width */
-            border: 0.5px solid #f2d79e; /* Solid border */
-            background-color: #f6e9bd; /* White background */
+            border: 0.5px solid #290000; /* Border color */
+            background-color: #290000; /* White background */
             cursor: pointer; /* Pointer cursor on hover */
             transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+            width: 80%; /* Make buttons take up 80% of the container's width */
+            font-size: 24px;
+            color: #f74d19;
+            text-align: left;
         }
 
         @media (hover: hover) {
             .choice-button:hover {
-                background-color: #f3dba7; /* Slightly darker background on hover */
+                background-color: #f74d19;
+                color: #290000;
             }
         }
         .choice-button:focus {
-            background-color: #fff; /* Slightly darker background on hover */
+            background-color: #f74d19;
+            color: #290000;
         }
         .story-text {
-            font-size: 20px;
-            margin-bottom: 1rem; /* Space above the choices container */
+            font-size: 32px;
+            margin-bottom: 1px; /* Space above the choices container */
+            padding: 1rem;
+            border: 0.5px solid #f74d19; /* Border color */
+            color: #f74d19;
+            text-align: left;
         /* padding-bottom: 5rem; */
         }
 
@@ -117,15 +134,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="title">What vegetable are you?</div> 
-        <img id="homescreen" style="padding-bottom: 15px" src="smaller_images/homepage.png" alt="Story Image"/>
+        <div class="title">What creature are you?</div>
+        <div class="subtitle">(based on all the little guys ania sends me...)</div>
         <a href="#" class="start-button" onclick="startGame()">Start</a>
         
         <div class="game-container" id="game-container">
             <div class ="story-text" id="story-text"></div>
-            <div class="image-container">
-                <img id="story-image" src="smaller_images/placeholder.png" alt="Story Image"/>
-            </div>
             <div class="choices" id="choices"></div>
         </div>
 

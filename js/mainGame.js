@@ -1,7 +1,6 @@
-const gameData = gameData = {
+const gameData= {
     "1": {
         "text": "the day is full of possibilities! you have nothing planned today. what will you decide to do first?",
-        "image" : "",
 "choices": {
             "go on a walk": [2,["cyndaquil","chikawa", "squirrel", "chipmunk", "owl cat"]],
             "brew a cup of tea": [3,["tomato", "snuggles", "bunny", "wise monke"]],
@@ -12,7 +11,6 @@ const gameData = gameData = {
     },
     "2": {
         "text":"where will you take a walk?",
-        "image":"",
         "choices":{
             "in the woods": [7, ["cyndaquil", "owl cat"]],
             "next to the lake": [7, ["eyebrow seal", "shark cat"]],
@@ -22,7 +20,6 @@ const gameData = gameData = {
     },
     "7": {
         "text":"you're having a nice walk. it's lovely out! what are you thinking about?",
-        "image":"",
         "choices":{
             "wow the sun feels so good!": [8, ["fire kitty", "cyndaquil"]],
             "oooh i could get a little snack as a treat :3": [8, ["shark cat", "belly cat"]],
@@ -33,7 +30,6 @@ const gameData = gameData = {
     
     "3": {
         "text":"what kind of tea?",
-        "image":"",
         "choices":{
             "honey ginseng": [13, ["tomato","eyebrow seal"]],
             "pi pa gao": [13, ["angry cat", "angry puppy"]],
@@ -44,14 +40,12 @@ const gameData = gameData = {
     },
     "13": {
         "text":"you're sipping your drink, enjoying the flavor. what a perfect choice for this day!",
-        "image":"",
         "choices":{
             "continue":[14,[]]
         },
     },
     "14": {
         "text":"the cup is empty.. what will you do next?",
-        "image":"",
         "choices": {
             "go on a walk": [2,["cyndaquil","chikawa", "squirrel", "chipmunk", "owl cat"]],
             "call up a friend": [4,["forehead puppy", "chikawa", "yowling puppy", "snow monke", "black cat"]],
@@ -61,7 +55,6 @@ const gameData = gameData = {
     },
     "4": {
         "text":"which friend will you call?",
-        "image":"",
         "choices":{
             "the one i haven't caught up w in awhile": [13, ["wise monke", "shark cat"]],
             "the one i call every day, duh!": [13, ["angry cat", "yowling puppy"]],
@@ -71,21 +64,18 @@ const gameData = gameData = {
     },
     "13": {
         "text":"you're having a nice time with your friend. it's so important to have strong friendships!",
-        "image":"",
         "choices":{
             "continue":[8,[]]
         },
     },
     "5": {
         "text":"naptime! zzz...",
-        "image":"",
         "choices":{
             "continue": [9, []]
         },
     },
     "9": {
         "text":"you wake up and the sun is setting!",
-        "image":"",
         "choices":{
             "i'm going back to sleep!": [10,["belly cat", "cyndaquil", "snuggles"]],
             "oh perfect! i want to see the sunset! i'll take a quick walk": [12,["tomato", "forehead puppy", "owl cat"]],
@@ -94,7 +84,6 @@ const gameData = gameData = {
     },
     "10": {
         "text":"you wake up and the stars are out!",
-        "image":"",
         "choices":{
             "i'm going back to sleep!": [11,["belly cat", "snuggles"]],
             "oh nice! i want to see the stars! i'll take a walk to see the stars": [12,["tomato", "forehead puppy", "owl cat"]],
@@ -103,7 +92,6 @@ const gameData = gameData = {
     },
     "11": {
         "text":"you wake up and the owls are hoo-ing!",
-        "image":"",
         "choices":{
             "i'm going back to sleep!": [0,["snuggles"]],
             "wow it sounds so calm out. i'll take a nice, quiet walk!": [12,["tomato", "forehead puppy", "owl cat"]],
@@ -112,7 +100,6 @@ const gameData = gameData = {
     },
     "12": {
         "text":"you're having a nice walk. it's lovely out! what are you thinking about?",
-        "image":"",
         "choices":{
             "oooh i could get a little snack as a treat :3": [8, ["shark cat", "belly cat"]],
             "i wish my girlfriend was here...": [8, ["tomato", "snow monke", "egg puppy"]],
@@ -122,7 +109,6 @@ const gameData = gameData = {
     },
     "6": {
         "text":"there are so many cafes in town! how do you decide?",
-        "image":"",
         "choices":{
             "the closest one": [13, []],
             "the best reviews": [13, []],
@@ -134,7 +120,6 @@ const gameData = gameData = {
     },
     "13": {
         "text":"you're at the cafe, looking at the menu. you step up to order, but someone cuts you and starts ordering!",
-        "image":"",
         "choices":{
             "that's rude asf! i'm calling them out": [15, ["yowling puppy", "angry puppy"]],
             "wtf?? smh some people don't have any manners... i'll stare at them angrily": [15, ["angry cat"]],
@@ -144,7 +129,6 @@ const gameData = gameData = {
     },
     "15": {
         "text":"you order your drink. how much do you tip?",
-        "image":"",
         "choices":{
             "no tip": [16, ["tomato", "black cat"]],
             "$1": [16, ["yowling puppy", "angry puppy"]],
@@ -155,7 +139,6 @@ const gameData = gameData = {
     },
     "16": {
         "text":"you get your drink and sit down. it's a nice cafe, a good drink! you're glad you chose this spot.",
-        "image":"",
         "choices":{
             "continue":[8,[]]
         },
@@ -163,7 +146,6 @@ const gameData = gameData = {
 
     "8": {
         "text":"suddenly a wizard appears in front of you!! he asks ",
-        "image":"",
         "choices":{
             "wow the sun feels so good!": [0, ["fire kitty", "cyndaquil"]],
             "oooh i could get a little snack as a treat :3": [0, ["shark cat", "belly cat"]],
@@ -176,10 +158,8 @@ const gameData = gameData = {
 
 
 
-
     "1000": {
         "text":"",
-        "image":"",
         "choices":{
             "A": [0, []]
         },
@@ -219,31 +199,27 @@ let currentState = 1;
 
 function renderState(state) {
     const storyText = document.getElementById('story-text');
-    const storyImage = document.getElementById('story-image');
     const choicesContainer = document.getElementById('choices');
+    
+    // Render the game state content
+    storyText.textContent = gameData[state].text;
+    choicesContainer.innerHTML = '';
 
-    const img = new Image();
-    img.src = gameData[state].image;
-
-    img.onload = () => {
-        storyImage.src = img.src;
-        storyText.textContent = gameData[state].text;
-        choicesContainer.innerHTML = '';
-
-        for (const [choice, info] of Object.entries(gameData[state].choices)) {
-            const button = document.createElement('button');
-            button.textContent = choice;
-            button.className = 'choice-button';
-            let nextState = info[0];
-            button.onclick = () => changeState(nextState, info[1]); //each time you change state you update the personalities dictionary
-            choicesContainer.appendChild(button);
-        }
-    };
+    for (const [choice, info] of Object.entries(gameData[state].choices)) {
+        const button = document.createElement('button');
+        button.textContent = choice;
+        button.className = 'choice-button';
+        let nextState = info[0];
+        button.onclick = () => changeState(nextState, info[1]); //each time you change state you update the personalities dictionary
+        choicesContainer.appendChild(button);
+    }
 }
 
 
 function changeState(newState, selectedPersonalities) { 
-    // console.log(personalities); 
+    console.log('Changing to state:', newState); // Debug log
+    console.log('Selected personalities:', selectedPersonalities); // Debug log
+    
     selectedPersonalities.forEach(personality => {
         personalities[personality]++;
     });
@@ -251,12 +227,14 @@ function changeState(newState, selectedPersonalities) {
     currentState = newState;
 
     if (currentState === 0) {
+        console.log('State is 0, calling revealMostSelectedVegetable'); // Debug log
         revealMostSelectedVegetable();
     } else {
         renderState(currentState);
     }
 }
 function revealMostSelectedVegetable() {
+    console.log('revealMostSelectedVegetable called'); // Debug log
     let maxCount = 0;
     let maxVeggie = '';
 
@@ -267,10 +245,11 @@ function revealMostSelectedVegetable() {
         }
     }
 
-    const storyImage = document.getElementById('story-image');
+    console.log('Max veggie:', maxVeggie, 'Count:', maxCount); // Debug log
+
     const text = document.getElementById('story-text');
     const choicesContainer = document.getElementById('choices');
-    const veggieImagePath = `smaller_images/id_cards/${maxVeggie}.png`;
+    const veggieImagePath = `images/id_cards/${maxVeggie}.png`;
 
     // Preload the image
     const img = new Image();
@@ -282,11 +261,9 @@ function revealMostSelectedVegetable() {
     shareButton.textContent = 'Share the game with Friends';
     shareButton.className = 'choice-button';
 
-    // Once the image is loaded, update the DOM
-    img.onload = () => {
-        storyImage.style.display = 'none';
+    // Function to show results (with or without image)
+    function showResults() {
         choicesContainer.style.display = 'none';
-    
         text.textContent = "Drumroll... here is your Veggie ID! Don't lose it! (Right click or hold the image to save)";
         text.appendChild(img);
 
@@ -301,13 +278,26 @@ function revealMostSelectedVegetable() {
         };
 
         text.appendChild(shareButton);
+    }
+
+    // Once the image is loaded, update the DOM
+    img.onload = () => {
+        console.log('Image loaded successfully'); // Debug log
+        showResults();
+    };
+
+    // If image fails to load, still show results
+    img.onerror = () => {
+        console.log('Image failed to load, showing results anyway'); // Debug log
+        showResults();
     };
 }
 
 
 function startGame() {
     document.querySelector('.title').style.display = 'none';
-    document.getElementById('homescreen').style.display = 'none';
+    document.querySelector('.subtitle').style.display = 'none';
+    // document.getElementById('homescreen').style.display = 'none';
     document.querySelector('.start-button').style.display = 'none';
     document.getElementById('game-container').style.display = 'block';
     renderState(currentState);
