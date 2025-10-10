@@ -264,12 +264,12 @@ function revealMostSelectedVegetable() {
     // Function to show results (with or without image)
     function showResults() {
         choicesContainer.style.display = 'none';
-        text.textContent = "Drumroll... here is your Veggie ID! Don't lose it! (Right click or hold the image to save)";
+        text.textContent = "Drumroll... here is your Creature ID!";
         text.appendChild(img);
 
         // Share button functionality
         shareButton.onclick = () => {
-            const shareMessage = `Check out my Veggie ID! You can create yours at https://sophie006liu.github.io/vegetal/`;
+            const shareMessage = `grace made this super cool quiz! check out what creature you are at https://html-preview.github.io/?url=https://raw.githubusercontent.com/graceshaoy/ania28/sophie/home_page/index.html#`;
             navigator.clipboard.writeText(shareMessage).then(() => {
                 alert('Link copied to clipboard!');
             }).catch(err => {
