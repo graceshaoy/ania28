@@ -121,7 +121,7 @@ const gameData= {
     "13": {
         "text":"you're at the cafe, looking at the menu. you step up to order, but someone cuts you and starts ordering!",
         "choices":{
-            "that's rude asf! i'm calling them out": [15, ["yowling puppy", "angry puppy", "yowling puppy", "angry puppy", "bunny", "owl cat", "cyndaquil"]],
+            "that's rude asf! i'm calling them out": [15, ["yowling puppy", "angry puppy", "bunny", "owl cat", "cyndaquil"]],
             "wtf?? smh some people don't have any manners... i'll stare at them angrily": [15, ["angry cat", "angry cat", "green hamster", "stuffed ania", "chipmunk"]],
             "wait what just happened?": [15, ["chikawa", "egg puppy", "tomato", "forehead puppy"]],
             "i guess they're in a rush. that's okay i have time!": [15, ["eyebrow seal", "wise monke", "cheek cat", "snuggles"]]
@@ -243,27 +243,52 @@ function revealMostSelectedVegetable() {
         }
     }
 
-    console.log('Max veggie:', maxVeggie, 'Count:', maxCount); // Debug log
+    let secondMaxCount = 0;
+    let secondMaxVeggie = '';
+
+    for (const [vegetable, count] of Object.entries(personalities)) {
+        if (vegetable !== maxVeggie && count > secondMaxCount) {
+            secondMaxCount = count;
+            secondMaxVeggie = vegetable;
+        }
+    }
+
+    console.log('Max veggie:', maxVeggie, 'Count:', maxCount, 'Second max veggie', secondMaxVeggie, 'second max count', secondMaxCount); // Debug log
 
     const text = document.getElementById('story-text');
     const choicesContainer = document.getElementById('choices');
     const veggieImagePath = `images/id_cards/${maxVeggie}.png`;
+    const secondVeggieImagePath = `images/id_cards/${secondMaxVeggie}.png`;
 
     // Preload the image
     const img = new Image();
     img.src = veggieImagePath;
-    img.className = 'responsive-image'; 
+    img.className = 'responsive-image';
+
+    // Create the second image element
+    const secondImg = new Image();
+    secondImg.src = secondVeggieImagePath;
+    secondImg.className = 'responsive-image-small';
 
     // Create the share button
     const shareButton = document.createElement('button');
     shareButton.textContent = 'Share the game with Friends';
-    shareButton.className = 'choice-button';
+    shareButton.className = 'share-button';
 
     // Function to show results (with or without image)
     function showResults() {
         choicesContainer.style.display = 'none';
-        text.textContent = "Drumroll... here is your Creature ID!";
+        console.log('cleared')
+        text.textContent = "Drumroll... here's your Creature ID!";
+        // add line break
+        text.appendChild(document.createElement('br'));
         text.appendChild(img);
+        // Add secret identity text between the images
+        const secondText = document.createElement('p');
+        secondText.textContent = "(and your secret identity....)";
+        secondText.style.fontSize = '18px';
+        text.appendChild(secondText);
+        text.appendChild(secondImg);
 
         // Share button functionality
         shareButton.onclick = () => {

@@ -80,6 +80,33 @@
         margin-top: 2rem; /* Space above the choices container */
         }
 
+        .share-button {
+            font-family: 'PixelFont', sans-serif;
+            font-size: 18px; /* Adjust font size to be smaller */
+            padding: 1vh 1vw; /* Adjust padding based on viewport height and width */
+            border: 0.5px solid #f74d19; /* Border color */
+            background-color: #290000; /* White background */
+            cursor: pointer; /* Pointer cursor on hover */
+            /* transition: background-color 0.3s, transform 0.3s; Smooth transitions */
+            width: 80%; /* Make buttons take up 80% of the container's width */
+            font-size: 24px;
+            color: #f74d19;
+            text-align: center;
+            margin: 1em auto 0 auto;
+            display: block;
+        }
+
+        @media (hover: hover) {
+            .share-button:hover {
+                background-color: #f74d19;
+                color: #290000;
+            }
+        }
+        .share-button:focus {
+            background-color: #f74d19;
+            color: #290000;
+        }
+
         .choice-button {
             font-family: 'PixelFont', sans-serif;
             font-size: 18px; /* Adjust font size to be smaller */
@@ -127,9 +154,17 @@
         }
 
         .responsive-image {
-            max-width: 100%;
+            max-width: 80%;
             height: auto;
+            margin: auto;
+            display: block;
         }
+        .responsive-image-small {
+            max-width: 30%;
+            height: auto;
+            margin: auto;
+            display: block;
+            }
     </style>
 </head>
 <body>
