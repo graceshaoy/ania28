@@ -27,7 +27,6 @@ const gameData= {
             "is that a walnut tree??": [8, ["black cat", "forehead puppy", "bunny", "owl cat", "green hamster"]],
         },
     },
-    
     "3": {
         "text":"what kind of tea?",
         "choices":{
@@ -38,7 +37,6 @@ const gameData= {
             "actually fuck that. i want beer": [18,["cheek beer cat", "belly cat", "wise monke", "owl cat", "shark puppy"]]
         },
     },
-    
     "19": {
         "text":"how do you boil your water?",
         "choices":{
@@ -163,12 +161,88 @@ const gameData= {
     },
 
     "8": {
-        "text":"suddenly a wizard appears in front of you!!",
+        "text":"suddenly a wizard appears in front of you!! he pushes you into a portal...",
         "choices":{
-            "continue":[0,[]],
+            "nao! let me go! i don't i want to follow this strange man anywhere...":[21,["squirrel", "owl cat", "cheek beer cat", "cheek cat"]],
+            "hey! he interrupted the lovely time i was having! i'm not going":[21,["snuggles", "snow monke", "angry puppy", "shark puppy"]],
+            "what.. what's going on...": [22,["forehead puppy", "stuffed grace", "stuffed bunny", "eyebrow seal"]],
+            "hm let's see where this takes us": [22,["angry cat", "egg puppy", "fire kitty", "chipmunk", "wise monke"]]
         },
     },
-
+    "21":{
+        "text": "it's too late... you're already being transported!",
+        "choices": {"continue":[22,[]]}
+    },
+    "22": {
+        "text":"where do you think this portal is taking you?",
+        "choices":{
+            "space!":[23,["black cat", "eyebrow seal", "chikawa", "green hamster", "snow monke"]],
+            "another dimension":[23, ["snuggles", "angry cat", "tomato", "green hamster", "stuffed ania"]],
+            "a different time": [23, ["fire kitty", "egg puppy", "cyndaquil", "yowling puppy", "cheek cat"]],
+            "into the microscopic world!": [23, ["cheek beer cat", "bunny", "chipmunk", "owl cat", "snow monke"]]
+        },
+    },
+    "23": {
+        "text": "it actually took you to your girlfriend's room. she's not here though! what do you do?",
+        "choices": {
+            "i'm getting in bed and knocking out! it's the best waking up to cuddles": [24,["snuggles", "belly cat", "cheek cat", "stuffed bunny", "snow monke"]],
+            "hello...? walk around and see if she's home, just not in her room": [26,["tomato", "black cat", "stuffed ania", "forehead puppy", "angry cat", "yowling puppy"]],
+            "i'll do my own thing and wait for her to come home": [27,["squirrel", "egg puppy", "stuffed grace", "owl cat", "eyebrow seal"]],
+            "no fun without her... i'm leaving!": [31,["shark puppy", "cheek beer cat", "angry puppy", "wise monke", "cyndaquil", "squirrel"]]
+        }
+    },
+    "24":{
+        "text": "zzz...",
+        "choices":{"continue":[25,[]]}
+    },
+    "25":{
+        "text": "you wake up to kisses and hugs!",
+        "choices":{"continue":[30,[]]}
+    },
+    "26":{
+        "text": "you find her in the living room! she's surprised you're here (ofc... you came thru a portal)",
+        "choices":{"continue":[30,[]]}
+    },
+    "27":{
+        "text": "what do you do while waiting?",
+        "choices":{
+            "read a book": [29,["bunny", "eyebrow seal", "owl cat", "wise monke", "squirrel"]],
+            "play video games!": [29,["shark puppy", "green hamster", "cheek beer cat", "black cat"]],
+            "go on my phone": [29,["belly cat", "fire kitty", "cheek cat", "tomato", "stuffed ania"]],
+            "get a workout in": [29,["shark puppy", "cheek beer cat", "snow monke", "chipmunk", "cyndaquil"]],
+            "i'll cook something yummy!":[29,["forehead puppy", "tomato", "angry puppy", "belly cat", "cheek cat"]]
+        }
+    },
+    "29":{
+        "text": "she eventually gets home and is surprised you're here!",
+        "choices":{
+            "continue":[30,[]]
+        }
+    },
+    "31":{
+        "text":"the wizard's voice booms... 'you can't leave bc that's too many branching timelines for this quiz' ... wow what a mysterious voice!",
+        "choices":{
+            "continue":[32,[]]
+        }
+    },
+    "32":{
+        "text": "you're in your girlfriend's room. she's not here though! what do you do?",
+        "choices": {
+            "i'm getting in bed and knocking out! it's the best waking up to cuddles": [24,["snuggles", "belly cat", "cheek cat", "stuffed bunny", "snow monke"]],
+            "hello...? walk around and see if she's home, just not in her room": [26,["tomato", "black cat", "stuffed ania", "forehead puppy", "angry cat", "yowling puppy"]],
+            "i'll do my own thing and wait for her to come home": [27,["squirrel", "egg puppy", "stuffed grace", "owl cat", "eyebrow seal"]]
+        }
+    },
+    "30":{
+        "text": "yipee! gf time! what should you guys do together?",
+        "choices":{
+            "watch a movie and get cozy": [0,["eyebrow seal", "cyndaquil", "chipmunk", "tomato", "black cat"]],
+            "naptime :3": [0,["forehead puppy", "snow monke", "snuggles", "belly cat", "black cat", "stuffed ania", "cheek cat"]],
+            "let's go explore!": [0,["shark puppy", "stuffed ania", "wise monke", "yowling puppy", "bunny"]],
+            "i saw a post for a cool event earlier today, let's do that!": [0,["shark puppy", "stuffed ania", "cheek beer cat"]],
+            "let her decide!": [0,["angry cat", "angry puppy", "chikawa", "green hamster", "snow monke"]]
+        }
+    },
 
 
 
@@ -305,6 +379,7 @@ function revealMostSelectedVegetable() {
         const secondText = document.createElement('p');
         secondText.textContent = "(and your secret identity....)";
         secondText.style.fontSize = '18px';
+        secondText.style.textAlign = 'center';
         text.appendChild(secondText);
         text.appendChild(secondImg);
 
