@@ -385,7 +385,7 @@ function revealMostSelectedVegetable() {
 
         // Share button functionality
         shareButton.onclick = () => {
-            const shareMessage = `it's ania's 28th bday! check out what creature ania sends grace at https://html-preview.github.io/?url=https://raw.githubusercontent.com/graceshaoy/ania28/sophie/home_page/index.html#`;
+            const shareMessage = `it's ania's 28th bday! check out which of ania's favorite creatures you are at https://html-preview.github.io/?url=https://raw.githubusercontent.com/graceshaoy/ania28/sophie/home_page/index.html#`;
             navigator.clipboard.writeText(shareMessage).then(() => {
                 alert('Link copied to clipboard!');
             }).catch(err => {
