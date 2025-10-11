@@ -31,12 +31,21 @@ const gameData= {
     "3": {
         "text":"what kind of tea?",
         "choices":{
-            "honey ginseng": [18, ["tomato","eyebrow seal", "forehead puppy", "shark puppy"]],
-            "pi pa gao": [18, ["angry cat", "angry puppy", "tomato", "chikawa", "belly cat", "egg puppy"]],
-            "vitamin c": [18,["yowling puppy", "owl cat", "squirrel", "stuffed ania", "black cat"]],
-            "jasmine": [18,["fire kitty", "snuggles", "cheek cat", "cyndaquil", "stuffed bunny"]],
+            "honey ginseng": [19, ["tomato","eyebrow seal", "forehead puppy", "shark puppy"]],
+            "pi pa gao": [19, ["angry cat", "angry puppy", "tomato", "chikawa", "belly cat", "egg puppy"]],
+            "vitamin c": [19,["yowling puppy", "owl cat", "squirrel", "stuffed ania", "black cat"]],
+            "jasmine": [19,["fire kitty", "snuggles", "cheek cat", "cyndaquil", "stuffed bunny"]],
             "actually fuck that. i want beer": [18,["cheek beer cat", "belly cat", "wise monke", "owl cat", "shark puppy"]]
         },
+    },
+    
+    "19": {
+        "text":"how do you boil your water?",
+        "choices":{
+            "kettle": [18, ["cheek cat", "fire kitty", "shark puppy", "snow monke", "snuggles"]],
+            "pot": [18, ["yowling puppy", "stuffed grace", "belly cat", "bunny"]],
+            "microwave": [18, ["green hamster", "owl cat", "angry cat", "eyebrow seal"]]
+        }
     },
     "18": {
         "text":"you're sipping your drink, enjoying the flavor. what a perfect choice for this day!",
@@ -62,8 +71,17 @@ const gameData= {
             "someone to just be on the phone w. i just like the company of someone else": [17,["black cat", "tomato", "snow monke", "owl cat", "snuggles", "stuffed ania"]]
         },
     },
-    "17": {
-        "text":"you're having a nice time with your friend. it's so important to have strong friendships!",
+    "17":{
+        "text":"your friend doesn't pick up :( what do you do?",
+        "choices":{
+            "call again!":[20, ["tomato","black cat", "yowling puppy", "chipmunk"]],
+            "call another friend":[20, ["forehead puppy", "owl cat", "egg puppy", "eyebrow seal", "angry puppy"]],
+            "eh. i guess go on a walk": [2,["snow monke", "snuggles", "angry cat", "owl cat", "squirrel"]],
+            "maybe i'll go to a cafe instead!": [6,["shark puppy", "forehead puppy", "cheek cat", "stuffed ania"]]
+        }
+    },
+    "20": {
+        "text":"they pick up! you're having a nice time with your friend. it's so important to have strong friendships!",
         "choices":{
             "continue":[8,[]]
         },
@@ -145,7 +163,7 @@ const gameData= {
     },
 
     "8": {
-        "text":"suddenly a wizard appears in front of you!! he asks ",
+        "text":"suddenly a wizard appears in front of you!!",
         "choices":{
             "continue":[0,[]],
         },
