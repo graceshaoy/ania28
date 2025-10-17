@@ -163,7 +163,7 @@ const gameData= {
     "8": {
         "text":"suddenly a wizard appears in front of you!! he pushes you into a portal...",
         "choices":{
-            "nao! let me go! i don't i want to follow this strange man anywhere...":[21,["squirrel", "owl cat", "cheek beer cat", "cheek cat"]],
+            "nao! let me go! i don't want to follow this strange man anywhere...":[21,["squirrel", "owl cat", "cheek beer cat", "cheek cat"]],
             "hey! he interrupted the lovely time i was having! i'm not going":[21,["snuggles", "snow monke", "angry puppy", "shark puppy"]],
             "what.. what's going on...": [22,["forehead puppy", "stuffed grace", "stuffed bunny", "eyebrow seal", "helpless puppy"]],
             "hm let's see where this takes us": [22,["egg puppy", "fire kitty", "chipmunk", "wise monke"]]
