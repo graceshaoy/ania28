@@ -285,10 +285,6 @@ const gameData= {
     },
     "70": {
        "text": "what a full day! i wonder what tomorrow holds... . • ° ★ ✰⋆｡:ﾟ･*☽",
-        "choices":{'continue':[71,[]]}
-    },
-    "71":{
-        "text":"",
         "choices":{'see your results':[0,[]]}
     }
 };
