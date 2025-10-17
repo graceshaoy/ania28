@@ -13,7 +13,7 @@ const gameData= {
         "text":"where will you take a walk?",
         "choices":{
             "in the woods": [7, ["cyndaquil", "owl cat", "green hamster", "squirrel", "chipmunk"]],
-            "next to the lake": [7, ["eyebrow seal", "shark puppy", "angry cat", "black cat", "egg puppy"]],
+            "next to the lake": [7, ["eyebrow seal", "shark puppy", "black cat", "egg puppy"]],
             "in the mountains": [7, ["bunny", "snow monke", "yowling puppy", "stuffed bunny", "stuffed ania"]],
             "in my neighborhood": [7, ["eyebrow seal", "chikawa", "stuffed grace", "wise monke","helpless puppy"]]
         },
@@ -118,7 +118,7 @@ const gameData= {
         "text":"you're having a nice walk. it's lovely out! what are you thinking about?",
         "choices":{
             "oooh i could get a little snack as a treat :3": [8, ["shark puppy", "belly cat", "chipmunk", "stuffed ania"]],
-            "i wish my girlfriend was here...": [8, ["tomato", "snow monke", "egg puppy", "tomato", "angry cat", "black cat"]],
+            "i wish my girlfriend was here...": [8, ["tomato", "snow monke", "egg puppy", "tomato", "forehead puppy", "black cat"]],
             "is that a walnut tree??": [8, ["black cat", "forehead puppy", "bunny", "owl cat", "green hamster"]],
             "what was that sound just now???": [8, ["yowling puppy", "bunny", "chikawa", "angry puppy", "stuffed grace", "helpless puppy"]]
         },
@@ -138,7 +138,7 @@ const gameData= {
         "text":"you're at the cafe, looking at the menu. you step up to order, but someone cuts you and starts ordering!",
         "choices":{
             "that's rude asf! i'm calling them out": [15, ["yowling puppy", "angry puppy", "bunny", "owl cat", "cyndaquil"]],
-            "wtf?? smh some people don't have any manners... i'll stare at them angrily": [15, ["angry cat", "angry cat", "green hamster", "stuffed ania", "chipmunk"]],
+            "wtf?? smh some people don't have any manners... i'll stare at them angrily": [15, ["angry cat", "green hamster", "stuffed ania", "chipmunk"]],
             "wait what just happened?": [15, ["chikawa", "egg puppy", "tomato", "forehead puppy", "helpless puppy"]],
             "i guess they're in a rush. that's okay i have time!": [15, ["eyebrow seal", "wise monke", "cheek cat", "snuggles"]]
         },
@@ -166,7 +166,7 @@ const gameData= {
             "nao! let me go! i don't i want to follow this strange man anywhere...":[21,["squirrel", "owl cat", "cheek beer cat", "cheek cat"]],
             "hey! he interrupted the lovely time i was having! i'm not going":[21,["snuggles", "snow monke", "angry puppy", "shark puppy"]],
             "what.. what's going on...": [22,["forehead puppy", "stuffed grace", "stuffed bunny", "eyebrow seal", "helpless puppy"]],
-            "hm let's see where this takes us": [22,["angry cat", "egg puppy", "fire kitty", "chipmunk", "wise monke"]]
+            "hm let's see where this takes us": [22,["egg puppy", "fire kitty", "chipmunk", "wise monke"]]
         },
     },
     "21":{
@@ -186,7 +186,7 @@ const gameData= {
         "text": "it actually took you to your girlfriend's room. she's not here though! what do you do?",
         "choices": {
             "i'm getting in bed and knocking out! it's the best waking up to cuddles": [24,["snuggles", "belly cat", "cheek cat", "stuffed bunny", "snow monke"]],
-            "hello...? walk around and see if she's home, just not in her room": [26,["tomato", "black cat", "stuffed ania", "forehead puppy", "angry cat", "yowling puppy", "helpless puppy"]],
+            "hello...? walk around and see if she's home, just not in her room": [26,["tomato", "black cat", "stuffed ania", "forehead puppy", "yowling puppy", "helpless puppy"]],
             "i'll do my own thing and wait for her to come home": [27,["squirrel", "egg puppy", "stuffed grace", "owl cat", "eyebrow seal"]],
             "no fun without her... i'm leaving!": [31,["shark puppy", "cheek beer cat", "angry puppy", "wise monke", "cyndaquil", "squirrel"]]
         }
@@ -285,6 +285,10 @@ const gameData= {
     },
     "70": {
        "text": "what a full day! i wonder what tomorrow holds... . • ° ★ ✰⋆｡:ﾟ･*☽",
+        "choices":{'continue':[71,[]]}
+    },
+    "71":{
+        "text":"",
         "choices":{'see your results':[0,[]]}
     }
 };
