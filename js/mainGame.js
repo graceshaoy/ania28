@@ -15,7 +15,7 @@ const gameData= {
             "in the woods": [7, ["cyndaquil", "owl cat", "green hamster", "squirrel", "chipmunk"]],
             "next to the lake": [7, ["eyebrow seal", "shark puppy", "angry cat", "black cat", "egg puppy"]],
             "in the mountains": [7, ["bunny", "snow monke", "yowling puppy", "stuffed bunny", "stuffed ania"]],
-            "in my neighborhood": [7, ["eyebrow seal", "chikawa", "stuffed grace", "wise monke"]]
+            "in my neighborhood": [7, ["eyebrow seal", "chikawa", "stuffed grace", "wise monke","helpless puppy"]]
         },
     },
     "7": {
@@ -31,7 +31,7 @@ const gameData= {
         "text":"what kind of tea?",
         "choices":{
             "honey ginseng": [19, ["tomato","eyebrow seal", "forehead puppy", "shark puppy"]],
-            "pi pa gao": [19, ["angry cat", "angry puppy", "tomato", "chikawa", "belly cat", "egg puppy"]],
+            "pi pa gao": [19, ["angry cat", "angry puppy", "tomato", "chikawa", "belly cat", "egg puppy", "helpless puppy"]],
             "vitamin c": [19,["yowling puppy", "owl cat", "squirrel", "stuffed ania", "black cat"]],
             "jasmine": [19,["fire kitty", "snuggles", "cheek cat", "cyndaquil", "stuffed bunny"]],
             "actually fuck that. i want beer": [18,["cheek beer cat", "belly cat", "wise monke", "owl cat", "shark puppy"]]
@@ -64,7 +64,7 @@ const gameData= {
         "text":"which friend will you call?",
         "choices":{
             "the one i haven't caught up w in awhile": [17, ["wise monke", "shark puppy", "stuffed ania", "eyebrow seal"]],
-            "the one i call every day, duh!": [17, ["angry cat", "yowling puppy", "black cat", "chikawa", "tomato", "forehead puppy"]],
+            "the one i call every day, duh!": [17, ["angry cat", "yowling puppy", "black cat", "chikawa", "tomato", "forehead puppy", "helpless puppy"]],
             "the wise one, i need advice about something...": [17,["black cat", "angry cat", "bunny", "chikawa", "snow monke"]],
             "someone to just be on the phone w. i just like the company of someone else": [17,["black cat", "tomato", "snow monke", "owl cat", "snuggles", "stuffed ania"]]
         },
@@ -103,7 +103,7 @@ const gameData= {
         "choices":{
             "i'm going back to sleep!": [11,["belly cat", "snuggles", "stuffed ania"]],
             "oh nice! i want to see the stars! i'll take a walk to see the stars": [12,["tomato", "forehead puppy", "owl cat", "stuffed grace"]],
-            "oh shoot! i gotta eat something. i'll go to the midnight cafe": [13,["green hamster", "egg puppy", "snuggles"]]
+            "oh shoot! i gotta eat something. i'll go to the midnight cafe": [13,["green hamster", "egg puppy", "snuggles", "helpless puppy"]]
         },
     },
     "11": {
@@ -120,13 +120,13 @@ const gameData= {
             "oooh i could get a little snack as a treat :3": [8, ["shark puppy", "belly cat", "chipmunk", "stuffed ania"]],
             "i wish my girlfriend was here...": [8, ["tomato", "snow monke", "egg puppy", "tomato", "angry cat", "black cat"]],
             "is that a walnut tree??": [8, ["black cat", "forehead puppy", "bunny", "owl cat", "green hamster"]],
-            "what was that sound just now???": [8, ["yowling puppy", "bunny", "chikawa", "angry puppy", "stuffed grace"]]
+            "what was that sound just now???": [8, ["yowling puppy", "bunny", "chikawa", "angry puppy", "stuffed grace", "helpless puppy"]]
         },
     },
     "6": {
         "text":"there are so many cafes in town! how do you decide?",
         "choices":{
-            "the closest one": [13, ["angry puppy", "belly cat", "chikawa", "egg puppy", "fire kitty"]],
+            "the closest one": [13, ["angry puppy", "belly cat", "chikawa", "egg puppy", "fire kitty", "helpless puppy"]],
             "the best reviews": [13, ["angry cat", "chipmunk", "wise monke", "cheek cat"]],
             "my favorite :) i never stray!": [13, ["forehead puppy", "angry cat","black cat","snow monke"]],
             "the one w the coolest looking drinks": [13, ["tomato", "stuffed ania", "owl cat"]],
@@ -139,14 +139,14 @@ const gameData= {
         "choices":{
             "that's rude asf! i'm calling them out": [15, ["yowling puppy", "angry puppy", "bunny", "owl cat", "cyndaquil"]],
             "wtf?? smh some people don't have any manners... i'll stare at them angrily": [15, ["angry cat", "angry cat", "green hamster", "stuffed ania", "chipmunk"]],
-            "wait what just happened?": [15, ["chikawa", "egg puppy", "tomato", "forehead puppy"]],
+            "wait what just happened?": [15, ["chikawa", "egg puppy", "tomato", "forehead puppy", "helpless puppy"]],
             "i guess they're in a rush. that's okay i have time!": [15, ["eyebrow seal", "wise monke", "cheek cat", "snuggles"]]
         },
     },
     "15": {
         "text":"you order your drink. how much do you tip?",
         "choices":{
-            "no tip": [16, ["green hamster", "snow monke", "angry puppy", "black cat"]],
+            "no tip": [16, ["green hamster", "snow monke", "angry puppy", "black cat", "helpless puppy"]],
             "$1": [16, ["yowling puppy", "squirrel", "eyebrow seal", "shark puppy"]],
             "$2": [16, ["angry cat", "tomato", "wise monke", "stuffed ania", "forehead puppy"]],
             "$3": [16, ["cheek cat", "cheek beer cat", "stuffed bunny", "belly cat"]],
@@ -165,7 +165,7 @@ const gameData= {
         "choices":{
             "nao! let me go! i don't i want to follow this strange man anywhere...":[21,["squirrel", "owl cat", "cheek beer cat", "cheek cat"]],
             "hey! he interrupted the lovely time i was having! i'm not going":[21,["snuggles", "snow monke", "angry puppy", "shark puppy"]],
-            "what.. what's going on...": [22,["forehead puppy", "stuffed grace", "stuffed bunny", "eyebrow seal"]],
+            "what.. what's going on...": [22,["forehead puppy", "stuffed grace", "stuffed bunny", "eyebrow seal", "helpless puppy"]],
             "hm let's see where this takes us": [22,["angry cat", "egg puppy", "fire kitty", "chipmunk", "wise monke"]]
         },
     },
@@ -186,7 +186,7 @@ const gameData= {
         "text": "it actually took you to your girlfriend's room. she's not here though! what do you do?",
         "choices": {
             "i'm getting in bed and knocking out! it's the best waking up to cuddles": [24,["snuggles", "belly cat", "cheek cat", "stuffed bunny", "snow monke"]],
-            "hello...? walk around and see if she's home, just not in her room": [26,["tomato", "black cat", "stuffed ania", "forehead puppy", "angry cat", "yowling puppy"]],
+            "hello...? walk around and see if she's home, just not in her room": [26,["tomato", "black cat", "stuffed ania", "forehead puppy", "angry cat", "yowling puppy", "helpless puppy"]],
             "i'll do my own thing and wait for her to come home": [27,["squirrel", "egg puppy", "stuffed grace", "owl cat", "eyebrow seal"]],
             "no fun without her... i'm leaving!": [31,["shark puppy", "cheek beer cat", "angry puppy", "wise monke", "cyndaquil", "squirrel"]]
         }
@@ -236,27 +236,65 @@ const gameData= {
     "30":{
         "text": "yipee! gf time! what should you guys do together?",
         "choices":{
-            "watch a movie and get cozy": [0,["eyebrow seal", "cyndaquil", "chipmunk", "tomato", "black cat"]],
-            "naptime :3": [0,["forehead puppy", "snow monke", "snuggles", "belly cat", "black cat", "stuffed ania", "cheek cat"]],
-            "let's go explore!": [0,["shark puppy", "stuffed ania", "wise monke", "yowling puppy", "bunny"]],
-            "i saw a post for a cool event earlier today, let's do that!": [0,["shark puppy", "stuffed ania", "cheek beer cat"]],
-            "let her decide!": [0,["angry cat", "angry puppy", "chikawa", "green hamster", "snow monke"]]
+            "let's watch something and get cozy": [33,["eyebrow seal", "cyndaquil", "chipmunk", "tomato", "black cat"]],
+            "naptime :3": [36,["forehead puppy", "snow monke", "snuggles", "belly cat", "black cat", "stuffed ania", "cheek cat"]],
+            "let's go explore!": [37,["shark puppy", "stuffed ania", "wise monke", "yowling puppy", "bunny"]],
+            "let her decide!": [39,["angry cat", "angry puppy", "chikawa", "green hamster", "snow monke",'helpless puppy']]
+        } 
+    },
+    "33" : {
+        "text": "what will you watch?",
+        "choices":{
+            "horror movie!": [34, ["angry cat", "black cat", "tomato"]],
+            "something nice and happy": [34, ["eyebrow seal", "forehead puppy", "stuffed bunny",'helpless puppy']],
+            "a fancy film": [34, ["wise monke", "cheek beer cat", "squirrel", "green hamster"]],
+            "our tv show :)": [34, ["snow monke", "belly cat","stuffed ania", "forehead puppy"]]
         }
     },
-
-
-
-
-    "1000": {
-        "text":"",
-        "choices":{
-            "A": [0, []]
-        },
+    "34": {
+        "text": "you turn the lights off, press play, and share a blanket...",
+        "choices":{"continue":[70,[]]}
     },
-        
+    "36": {
+        "text": "you get into bed, tuck yourselves in, and fall asleep...",
+        "choices":{"continue":[70,[]]}
+    },
+    "37": {
+        "text": "where will you explore?",
+        "choices": {
+            "i saw a post for a cool event earlier today, let's do that!": [38,["shark puppy", "stuffed ania", "cheek beer cat"]],
+            "new sweet treat place!": [38,['belly cat','egg puppy','fire kitty','cheek cat']],
+            "a park nearby": [38,["squirrel",'chipmunk','owl cat','wise monke']],
+            "wherever the wind takes us": [38,["chikawa","black cat","chipmunk","snow monke",'helpless puppy']]
+        }
+    },
+    "38": {
+        "text": "you go and have so much fun! it's always nice to do things together :)",
+        "choices":{"continue":[70,[]]}
+    },
+    "39": {
+        "text": "she decided to stay home and put something on the tv! would you like to pick what to watch?",
+        "choices": {
+            "okie": [33,['black cat','shark puppy','stuffed bunny','tomato','snuggles']],
+            "no i'm tired of making choices today": [40,['helpless puppy','cyndaquil','fire kitty','angry cat']]
+        }
+    },
+    "40": {
+        "text":"after a second, she chooses a tv show you guys had forgotten about",
+        "choices":{'continue':[34,[]]}
+    },
+    "70": {
+       "text": "what a full day! i wonder what tomorrow holds... . • ° ★ ✰⋆｡:ﾟ･*☽",
+        "choices":{'continue':[71,[]]}
+    },
+    "71":{
+        "text":"",
+        "choices":{'see your results':[0,[]]}
+    }
 };
 
 const personalities = { 
+    "helpless puppy":0,
     "angry cat": 0,
     "angry puppy": 0,
     "shark puppy": 0, 
